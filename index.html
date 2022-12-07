@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <style>
+        .heading{
+            font-size: 50px;
+            font-family: arial;
+            text-align: center;
+            background-image: linear-gradient(red,blue);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .contaner{
+            height: auto;
+            width: 700px;
+            background-color: black;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            column-gap: 20px;
+            row-gap: 20px;
+            padding: 20px;
+            margin: auto;
+        }
+        .screen {
+            background-color: white;
+            height: 100px;
+            border-radius: 25px;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        button:hover{
+            background-color: rgb(126, 126, 126);
+        }
+        .screen input{
+            height: 100%;
+            width: 100%;
+            font-size: 50px;
+            border-radius: 25px;
+        }
+        .screen1{
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .up{
+            background-color: rgb(255, 227, 90);
+        }
+        .left{
+            background-color: yellow;
+        }
+        .zero{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading"><h1>Calculater</h1></div>
+
+    <div class="contaner">
+
+        <div class="screen screen1">
+            <input type="text" name="" id="">
+        </div>
+
+      
+            <button class="screen up">A/C</button>
+            <button class="screen up">+/-</button>
+            <button class="screen up">%</button>
+            <button class="screen left">+</button>
+
+            <button class="screen">7</button>
+            <button class="screen">8</button>
+            <button class="screen">9</button>
+            <button class="screen left">X</button>
+
+            <button class="screen">4</button>
+            <button class="screen">5</button>
+            <button class="screen">6</button>
+            <button class="screen left">-</button>
+
+            <button class="screen">1</button>
+            <button class="screen">2</button>
+            <button class="screen">3</button>
+            <button class="screen left">+</button>
+
+            <button class="screen zero">0</button>
+            <button class="screen">.</button>
+            <button class="screen left">=</button>
+
+            
+        
+    </div>
+</body>
+</html>
